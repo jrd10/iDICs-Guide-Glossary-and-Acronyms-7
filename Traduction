@@ -51,50 +51,52 @@ Note 2: Stereo-DIC refers to the measurement of shape and displacements in three
 => Note 2 : Stéré-CIN faire référence à la mesure de forme et de déplacements dans les 3 dimensions sur la surface d'une pièce de test, où deux (ou plus) caméras sont orientée à des angles différents. CIN-Stéréo est parfois appeléé CIN-3D mais ne doit pas être confondues avec la CIN volumétrique qui fournit des mesures de forme et déplacements à travers le volume de la pièce de test.
 
 Data Filtering: Any further post-processing of the results to spatially or temporally filter the DIC results (could include a Gaussian filter, median filter, etc.) 
-=> Filtrage de données :
+=> Filtrage de données : Tout filtre spatial ou temporel des résultats de CIN des actions de post-traitements (Peut inclure des filtres gaussian, filtre median, etc.)
 
 Data Point: A point at which DIC results (displacements, strains, etc.) are reported.
 Data points are typically reported at the center of subsets in local DIC.
-=> Point de données : 
+=> Point de données : Un point sur lequel tous les résultats de la corrélation d'images (déplacements, déformations, etc.) est reportés.
 
 Dynamic Range, Detector [counts or gray levels]: Number of bits of the analog to digital converter of a camera detector (e.g. 8-bit).
-=> 
+=> Etendue dynamique, Capteur [nombre ou niveau de gris ] : Nombre de bits du convertisseur analogique - numérique du capteur de la caméra (par exemple 8 bits)
 
 Dynamic Range, Image [counts or gray levels]: Range of gray levels contained in the image data. This can be graphically viewed in the image histogram. The image dynamic range is less than or equal to the detector dynamic range.
-=> 
+=> Etendue dynamique, image numérique [nombre ou niveau de gris ] : Etendue dynamique des niveaux de gris contenus dans l'image numérique. Celle-ci peut être visualisée graphiquement par un histogram. L'étendue dynamique des niveaux de gris de l'image numérique est inférieure ou égale à l'étendue dynamique du capteur de la caméra.
 
 Epipolar Error [pixel]: The distance between the location of a data point, as determined by cross-correlation of a pair of images from the two cameras of a stereo-DIC system, and the epipolar line.
-=>
+=> L'erreur épipolaire [pixel] : La distance entre la location d'un point de donnée, comme déterminé par la cross-corrélation d'une pair d'image de deux caméras d'un système CIN-stéréo, et la ligne épipolaire.
 
 Note 1: Depending on the DIC software, the epipolar error may also be called projection error, three-dimensional residuum, intersection error, or correlation deviation.
-=> 
+=> Selon the logiciel de CIN, l'erreur épipolaire peut être aussi appelée : projection error, three-dimensional residuum, intersection erro, ou déviation de corrélation.
 
 Note 2: The epipolar line is determined by the extrinsic parameters of the stereocamera calibration (i.e. stereo-angle, distance between two cameras). For more information on epipolar geometry, refer to [42, Sec. 4.2 (Three-Dimensional Computer Vision)].
-=> 
+=> La ligne epipolaire est déterminée par les paramètres extrinsèques de la calibration du système stéréo formé par les deux caméras (par exemple : l'angle de stéréocorrélation, la distance entre les deux caméras). Pour plus d'information sur la géométrie épipolaire, se référer à [42, Sec. 4.2 (Three-Dimensional Computer Vision)].
 
 Field-of-View (FOV) [mm × mm]: The region of space projected through a lens system onto a camera detector.
-=> 
+=> Champ de vision (CdV) {mm x mm] : La région de l'espace projeté à travers le système de lentilles sur le capteur de la caméra.
 
 Gray Level [counts]: The image intensity recorded by the image acquisition system, expressed as the number of counts of the digitizer.
-=> 
+=> L'intensité de l'image enregistrée par le système d'acquisition d'iamges, exprimé comme le nombe d'un comptage d'un digitaliseur.
 
 Note 1: This value is proportional to the measured light intensity, but typically has no absolute calibrated relationship to the measured intensity. For DIC, this lack of calibration is acceptable, because the image is used for tracking
 the object motion, rather than measuring the light intensity at points on the object.
-=> 
+=> Note 1 : Cette valeur est proportionnelle à l'intensité de la lumière mesurée, but n'a pas typiquement, même par l'étalonnage, d'absolue relation à la mesure de l'intensité. Pour la CIN, l'absence d'étalonnage est acceptable parce que l'image est utilisée pour le suivi du mouvement plutôt que de mesurer l'intensité de la lumière à des points de l'objet.
 
 Note 2: Usually the number of counts is relative to the number of bits (quantization level) in the imaging analog-to-digital converter.
-Image Data: Recorded \images" of a test piece containing encoded information related to the displacement field including displacement gradients, nearly always a 2D or 3D numerical array of \intensity" or gray level data that will be used for
-correlation.
-=> 
+=> Note 2 : Normalement, le nombre issu de ce comptage est lié au nombre de bits (niveau de quantification) du convertisseur analogique - digital de l'image. 
+
+Image Data: Recorded "images" of a test piece containing encoded information related to the displacement field including displacement gradients, nearly always a 2D or 3D numerical array of "intensity" or gray level data that will be used for correlation.
+=> Image numérique : Les "images" enregistrées d'une piece de test contenant les informations encodées relative au champs déplacement incluant les gradients du déplacments, presque toujours en réseau d'"intensité" en 2D ou 3D, ou en donnée de niveau de gris qui sera utilisé pour la corrélation. 
 
 Image Filtering: Any type of image data processing done to modify the gray level values of the pixels, most often a smoothing operation.
-=> 
+=> Filtrage de l'image : Tout type de traitement d'images numériques pour modifier les valeurs de niveau de gris des pixels, le plus souvent pour une action de lissage des valeurs. 
 
 Note 1: Analog Image Filtering refers to filtering that is done in an analog fashion by modifying the physical optical system, e.g. with a blur filter assembled on the camera detector or by defocusing the lens.
-=> 
+=> Filtrage d'images analogiques fait référence à un filtrage qui est fait de manière analogique en modifiant le système optique physique (par exemple un filtre de floutage monté sur un capteur de caméra ou par dérèglement la mise au point des lentilles.
 
 Note 2: Digital Image Filtering refers to filtering that is done in a digital fashion as a post-processing step after the image has been acquired, e.g. a Gaussian filter.
-=> 
+=> Filtrage d'images numérique fait référence à un filtrage qui est de manière numérique, dans une étape de post-traitement après que l'image a été acquise, par exempl un filtre gaussien. 
+
 Image Noise [counts or gray levels or percent of dynamic range]: Pixel-wise acquisition noise of the imaging system. This often varies depending on pixel intensity, camera temperature and optical intensity.
 => 
 
