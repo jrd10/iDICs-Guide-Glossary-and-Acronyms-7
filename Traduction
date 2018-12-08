@@ -1,0 +1,311 @@
+Glossary and Acronyms
+=> Glossaire et acronymes
+
+7.1 Acronyms
+  => Acronymes
+  
+DIC: Digital Image Correlation
+=> CIN : Corrélation d'Images Numériques
+
+DOF: Depth-of-Field
+=> PdC : Profondeur de Champ
+
+FOV: Field-of-View
+=> CdV : Champ de Vision
+
+iDICs: International Digital Image Correlation Society
+=> Nom de l'organisation qu'il convient d'éviter de traduire. 
+
+QOI: Quantity-of-Interest
+=> Cette expression exprime l'idée des niveaux de résultat (quantité) pour les points-clés (Interest).
+=> Niveau de résultats pour chaque grandeur
+
+ROI: Region-of-Interest
+=> RdI : Région d'intérêt
+=> L'expression Aire d'Intérêt est plus souvent utilisée, faisant référence à l'expression "Area of Interest". 
+=> Correspond au champ de mesure d'où l'on va tirer les données.
+
+SOD: Stand-Off Distance
+=> DtT : Distance de travail
+=> La distance perpendiculaire entre le plan moyen de votre objet à tester et, généralement, la première lentille de l'objectif.
+=> En stéréocorrélation, prendr cette distance entre les deux lentilles des deux systèmes optiques.
+
+VSG: Virtual Strain Gauge
+=> Jauge de contrainte virtuel.
+
+7.2 Glossary
+=> Glossaire
+
+Calibration Score: The residual of the bundle adjustment optimization process used
+to calibrate a DIC system.
+=> Score d'étalonnage : La valeur résiduelle obtenue à l'issue du process d'optimisation des différents réglages lors de l'étalonnage d'un système de corrélation d'images numérques.
+
+Digital Image Correlation: Within the scope of this guide, Digital Image Correlation (DIC) is an optically-based technique used to measure the evolving full-field 2D or 3D displacements on the surface of a test piece, throughout a mechanical
+test of a material or structure.
+=> Corrélation d'images numériques : Dans la cadre de ce guide, la corrélation d'images numériques (CIN) est une technique basée sur l'optique pour la mesure de l'évolution de l'intégralité d'un champ de déplacement 2D ou 3D sur la surface d'une pièce, à travers un test mécanique de matériaux ou de structure.   
+
+Note 1: 2D-DIC refers to the measurement of displacements in only two directions on the surface of the test piece, where one camera is oriented perpendicularly to a planar test piece.
+=> Note 1 : CIN-2D fait référence à une mesure de déplacement seulement dans deux directions d'une surface d'une pièce de test, où one caméra est orientée perpendiculairement à plan de la pièce à tester.
+
+Note 2: Stereo-DIC refers to the measurement of shape and displacements in three directions on the surface of the test piece, by using two (or more) cameras oriented at different angles. Stereo-DIC is sometimes called 3DDIC, but should not be confused with volumetric-DIC, which provides shape and displacement measurements throughout the volume of the test piece.
+=> Note 2 : Stéré-CIN faire référence à la mesure de forme et de déplacements dans les 3 dimensions sur la surface d'une pièce de test, où deux (ou plus) caméras sont orientée à des angles différents. CIN-Stéréo est parfois appeléé CIN-3D mais ne doit pas être confondues avec la CIN volumétrique qui fournit des mesures de forme et déplacements à travers le volume de la pièce de test.
+
+Data Filtering: Any further post-processing of the results to spatially or temporally filter the DIC results (could include a Gaussian filter, median filter, etc.) 
+=> Filtrage de données :
+
+Data Point: A point at which DIC results (displacements, strains, etc.) are reported.
+Data points are typically reported at the center of subsets in local DIC.
+=> Point de données : 
+
+Dynamic Range, Detector [counts or gray levels]: Number of bits of the analog to digital converter of a camera detector (e.g. 8-bit).
+=> 
+
+Dynamic Range, Image [counts or gray levels]: Range of gray levels contained in the image data. This can be graphically viewed in the image histogram. The image dynamic range is less than or equal to the detector dynamic range.
+=> 
+
+Epipolar Error [pixel]: The distance between the location of a data point, as determined by cross-correlation of a pair of images from the two cameras of a stereo-DIC system, and the epipolar line.
+=>
+
+Note 1: Depending on the DIC software, the epipolar error may also be called projection error, three-dimensional residuum, intersection error, or correlation deviation.
+=> 
+
+Note 2: The epipolar line is determined by the extrinsic parameters of the stereocamera calibration (i.e. stereo-angle, distance between two cameras). For more information on epipolar geometry, refer to [42, Sec. 4.2 (Three-Dimensional Computer Vision)].
+=> 
+
+Field-of-View (FOV) [mm × mm]: The region of space projected through a lens system onto a camera detector.
+=> 
+
+Gray Level [counts]: The image intensity recorded by the image acquisition system, expressed as the number of counts of the digitizer.
+=> 
+
+Note 1: This value is proportional to the measured light intensity, but typically has no absolute calibrated relationship to the measured intensity. For DIC, this lack of calibration is acceptable, because the image is used for tracking
+the object motion, rather than measuring the light intensity at points on the object.
+=> 
+
+Note 2: Usually the number of counts is relative to the number of bits (quantization level) in the imaging analog-to-digital converter.
+Image Data: Recorded \images" of a test piece containing encoded information related to the displacement field including displacement gradients, nearly always a 2D or 3D numerical array of \intensity" or gray level data that will be used for
+correlation.
+=> 
+
+Image Filtering: Any type of image data processing done to modify the gray level values of the pixels, most often a smoothing operation.
+=> 
+
+Note 1: Analog Image Filtering refers to filtering that is done in an analog fashion by modifying the physical optical system, e.g. with a blur filter assembled on the camera detector or by defocusing the lens.
+=> 
+
+Note 2: Digital Image Filtering refers to filtering that is done in a digital fashion as a post-processing step after the image has been acquired, e.g. a Gaussian filter.
+=> 
+Image Noise [counts or gray levels or percent of dynamic range]: Pixel-wise acquisition noise of the imaging system. This often varies depending on pixel intensity, camera temperature and optical intensity.
+=> 
+
+Image Scale [pixel/mm]: Number of optical elements (pixels) used to record an image of a region of physical length. The image scale can be used to convert from the image pixel size to physical units (e.g. meter).
+=>
+
+Note 1: The image scale varies with position in an image. In 2D-DIC, with a single camera perpendicular to the test piece, the variation tends to be small, since the variation is the result of lens distortions. In stereo-DIC, where the
+cameras are angled with respect to the surface of interest, the variation in image scale is much larger. This is the result of a combination of the lens distortions and the perspective effect (which is reversed in the left and right
+images). For stereo-DIC systems, the average image scale of the ROI shall be reported.
+=> 
+
+Interpolant: Interpolation function used to calculate the subpixel changes within the subset shape function transformation subject to the matching criteria during the correlation calculation.
+=> 
+
+Matching Criterion: Mathematical formulation used to calculate the quality metric of the calculated displacement field based on the underlying image data. Also commonly referred to as \correlation criterion."
+=> 
+
+Note 1: Common matching criteria include, but are not limited to, sum of square differences (SSD), normalized sum of square differences (NSSD), zero-normalized sum of square differences (ZNSSD) and cross-correlation (CC).
+=>
+
+Noise-Floor: [See Resolution of a Quantity-of-Interest.]
+=>
+
+Pattern Feature Size [pixel]: Characteristic length (e.g. diameter) of DIC pattern features in the image data, reported in terms of pixels.
+=> 
+
+Note 1: For DIC patterns that consist of primarily circular features (i.e. speckles), the pattern feature size is sometimes referred to as the \speckle size."
+=> 
+Note 2: If a range of feature sizes exist in the image, the mean size and an indication of the distribution of sizes (e.g. minimum and maximum, or standard deviation) should be reported.
+=> 
+
+Note 3: Physical size of the features can be calculated by dividing by the image scale.
+=> 
+
+Note 4: The spatial frequency of the pattern can be determined as the inverse of the pattern feature size (e.g. 1/(pattern feature size)).
+=>
+
+Pixel: Region over which the image data is averaged and quantized. There is a resulting gray level or number of counts at each pixel relative to some underlying input, usually optical intensity.
+=>
+
+Quantity-of-Interest (QOI): An attribute or property of a test piece that may be distinguished qualitatively and determined quantitatively [8], which a person seeks to characterize by performing a particular test.
+=>
+
+Note 1: QOIs may be both direct measurements or derived quantities. With respect to DIC, common QOIs are shape, curvature, displacement, velocity, acceleration, strain, strain-rate, etc.
+=> 
+
+Quantization Level [bits]: Number of bits used to record the gray level at each pixel. This may be light intensity for optical images, X-ray density for computed tomography, or any other information encoded as image contrast (image data). (A height map in an atomic force microscope is an example of a different type of \image data".)
+=>
+
+Region-of-Interest (ROI) of the Test Piece [mm × mm]: The portion of surface of the test piece that is used for analysis.
+=> 
+
+Note 1: The term \area-of-interest" is sometimes used interchangeably with the term \region-of-interest."
+=>
+
+Note 2: The region may be of any arbitrary shape, and may change shape in consecutive images.
+=> 
+
+Note 3: The term \region-of-interest" can refer to either a portion of the test piece or the corresponding portion of an image, and context typically is sufficient to distinguish between the two demarcations.
+=> 
+
+Region-of-Interest (ROI) of the Image [pixel × pixel]: The portion of the image corresponding to the region-of-interest of the test piece.
+=>
+
+Note 1: The term \area-of-interest" is sometimes used interchangeably with the term \region-of-interest."
+=> 
+
+Note 2: All QOIs are measured or derived using the image data that comes from the ROI of the image.
+=> 
+
+Note 3: The term \region-of-interest" can refer to either a portion of the test piece or the corresponding portion of an image, and context typically is sufficient to distinguish between the two demarcations.
+=> 
+
+Resolution, Image [pixel × pixel]: Total number of pixels contained in an image, typically reported as the width by height of the detector array in pixels.
+=> 
+Note 1: Image resolution should not be confused with optical resolution or spatial resolution.
+=> 
+
+Resolution, Optical [line pair / mm]: The ability of an imaging system to resolve detail in the object being imaged.
+=> 
+
+Note 1: Optical resolution is typically measured from images of a resolution target.
+=>
+
+Resolution, Spatial [pixel]: The minimum distance between two localized features that can be independently resolved.
+=> 
+
+Note 1: This definition might be counter intuitive, in that a smaller resolution value is desireable, whereas a larger resolution value is generally less desirable. These trends are opposite those of image resolution and optical resolution.
+=> 
+
+Note 2: For the current edition of this guide, the concept of spatial resolution is defined as above; however, a unified method to determine the spatial resolution of DIC measurements is a current topic of interest for iDICs, and iDICs is actively exploring this concept in more detail.
+=> 
+
+Resolution Target: An object with features of specified width and/or spacing, used to determine the optical resolution of an imaging system.
+=> 
+
+Note 1: Two common resolution targets are the 1951 USAF resolution target or the Siemens star, which can be purchased from major optics companies. See https://en.wikipedia.org/wiki/1951_USAF_resolution_test_chart and https://en.wikipedia.org/wiki/Siemens_star for more information.
+=> 
+Resolution of a Quantity-of-Interest: The threshold value of a QOI below which measurements are indistinguishable from noise, and above which measurements are significant.
+=> 
+
+Note 1: The phrase \Resolution of a QOI" is used interchangeably with the phrase \noise-floor" in this guide.
+=> 
+
+Note 2: The noise-floor is typically defined as a multiple of the standard deviation (either spatial or temporal) of the QOI computed under conditions in which the QOI should be zero.
+=> 
+
+Note 3: The noise-floor reflects only the random variance error of the QOI, and does not reflect any systematic bias errors that may be present in the QOI. See Sec. 5.4 for more information on variance versus bias errors.
+=> 
+
+Shape Function, Strain: Analytic equation that is fit, in a least-squares sense, to the displacement data within the strain window. Strains are computed from the derivatives of this equation.
+=> 
+
+Note 1: The strain shape function should not be confused with the subset shape function.
+=> 
+
+Note 2: Not all methods of computing strain invoke a strain shape function.Shape Function, Subset: Equation used to describe the displacement field within a subset.
+=>
+
+Note 1: Affine (linear) is the most common subset shape function, but higher ordered implementations are also used.
+=>
+
+Note 2: The subset shape function should not be confused with the strain shape function.
+=>
+
+Stand-Off Distance [m]: The distance between the aperture of the lens and the test specimen.
+=> 
+
+Stereo-Angle [degree]: In a stereo-DIC system, the included angle between the optical axis of each of the two camera systems (i.e. camera and lens).
+=> 
+
+Stereo-Plane: In a stereo-DIC system, the plane formed by the optical axes of the two camera systems (i.e. camera and lens).
+=> 
+
+Step Size, Lstep [pixel]: The spacing of pixel grid points at which the subset displacements are calculated. That is, there will be a displacement solution at every step in the ROI.
+=> 
+
+Note 1: The step size is also sometimes reported as overlap. For example, 50% overlap means a step size of half the subset size.
+=> 
+
+Subset: Portion of the image that is used to calculate one 3D coordinate value, or one displacement value.
+=>
+
+Note 1: Center point displacement is commonly reported, although other parameters may be available via the subset shape function. Subset Size, Lsubset [pixel]: Length of the subset in the reference image.
+=> 
+
+Note 1: Subsets are typically square or circular (in the reference image), and thus a single length is sufficient to define the subset size. Some software, however, permits rectangular subsets; in this case, dimensions of both sides of the rectangle should be given to define the subset size.
+
+Weighting Function: Mathematical device used to give some elements more influence on a result than other elements, based on the spatial location of the elements.
+=>
+
+Note 1: Common weighting functions are square or uniform (which weights all elements equally) or Gaussian (which weights elements closer to the center point of interest more heavily than elements farther from the center point of interest).
+=>
+
+Note 2: A subset weighting function is used to weight the intensities of the pixels contained within the subset when performing subset matching.
+=>
+
+Note 3: A strain weighting function is used to weight the displacement data points within the strain window when computing strain.
+=>
+
+Note 4: A filter weighting function is used to weight the data within a filter window when applying a spatial data filter.
+=> 
+
+Window, Filter: Local region of the ROI of the image, containing a finite number of data points, that is used for local spatial filters of DIC data.
+=> 
+
+Note 1: See Window Size for information about the filter window size. Window, Strain: Local region of the ROI of the image, containing a finite number of data points, that is used to calculate strain.
+=> 
+
+Note 1: Not all methods of computing strain invoke a strain window.
+=> 
+
+Note 2: See Window Size for information about the strain window size.
+=> 
+
+Window Size, Lwindow [data point]: Characteristic length of a local region of data points (e.g. a filter window or a strain window).
+=>
+
+Note 1: Strain and filter windows are typically square, circular, or hexagonal, and the size of the window is given by the characteristic length of the window (i.e. one side of the square, the diameter of the circle, or the effective diameter of the hexagon). The window size is specified in terms of the number of data points that span the characteristic length of the window. Windows are typically symmetric and centered at a data point; thus, window sizes are typically odd integers.
+=>
+
+Note 2: The window size in terms of pixels, L∗(window), is given by Eqn. 7.1, where window is the L(window) size in terms of data points, and Lstep is the step size.
+
+L*(window) = (L(window) − 1) Lstep                                         (7.1)
+=> 
+
+Note 3: To determine the window size in terms of physical units, the window size in terms of pixels must be divided by the average image scale.
+=> 
+
+Virtual Strain Gauge (VSG): The local region of the image that affects the strain value at a specific location.
+=> 
+
+Note 1: The VSG is analogous to | but not exactly equal to | the physical area that a physical strain gauge would cover.
+=> 
+
+Virtual Strain Gauge Size, LV SG [pixel]: Characteristic length of the virtual strain gauge.
+=> 
+
+Note 1: Virtual strain gauges are typically square, circular, or hexagonal, and the size of the VSG is given by the characteristic length of the VSG (i.e. one side of the square, the diameter of the circle, or the effective diameter of the hexagon). The VSG size is specified in terms of the number of pixels that span the characteristic length of the VSG.
+=> 
+
+Note 2: The size of the VSG depends on the strain calculation method and userdefined parameters such as step size, subset size, strain window, filter window, strain shape function, weighting functions, and subset shape function.
+An estimate for the size of the VSG, if L(window) > 0, is given by Eqn. 7.2, where L(window) is the window size (of either the strain window or of the filter window), L(step) is the step size, and Lsubset is the subset size.
+
+L(VSG) = (L(window) − 1) L(step) + L(subset)                                 (7.2)
+=> 
+
+Note 3: To determine the VSG size in terms of physical units, the VSG size must be divided by the average image scale.
+=> 
+
+End ot text - Fin du texte.
+
+
+
