@@ -207,104 +207,113 @@ Note 3: The noise-floor reflects only the random variance error of the QOI, and 
 => Note 3 : Le bruit de fond reflète uniquement l'erreur de variance aléatoire du QdI, et ne reflète aucune erreur de polarisation systématique pouvant être présente dans le QdI. Voir Sec. 5.4 pour plus d'information sur les erreurs de variance par rapport aux erreurs de polarisation.
 
 Shape Function, Strain: Analytic equation that is fit, in a least-squares sense, to the displacement data within the strain window. Strains are computed from the derivatives of this equation.
-=> 
+=> Fonction de forme, déformation (???) : Équation analytique qui est ajustée, au sens des moindres carrés, aux données de déplacement dans le champ de déformation. Les déformations sont calculées à partir des dérivées de cette équation.
 
 Note 1: The strain shape function should not be confused with the subset shape function.
-=> 
+=> Note 1 : La fonction de forme de déformation ne doit pas être confondue avec la fonction de forme des imagettes.
 
 Note 2: Not all methods of computing strain invoke a strain shape function.Shape Function, Subset: Equation used to describe the displacement field within a subset.
-=>
+??? => Note 2 : Toutes les méthodes de calcul de la déformation n'invoquent pas une fonction de forme de déformation. Fonction de forme, sous-jeu: équation utilisée pour décrire le champ de déplacement dans un sous-ensemble.
 
 Note 1: Affine (linear) is the most common subset shape function, but higher ordered implementations are also used.
-=>
+??? => Note 1 : Affine (linéaire) est la fonction de forme de sous-ensemble la plus courante, mais des implémentations plus ordonnées sont également utilisées.
 
-Note 2: The subset shape function should not be confused with the strain shape function.
+??? Note 2: The subset shape function should not be confused with the strain shape function.
 =>
 
 Stand-Off Distance [m]: The distance between the aperture of the lens and the test specimen.
-=> 
+=> Distance de Travail [m] : Distance entre l'ouverture de l'objectif (???) et l'éprouvette.
 
 Stereo-Angle [degree]: In a stereo-DIC system, the included angle between the optical axis of each of the two camera systems (i.e. camera and lens).
-=> 
+=> Angle stéréo [degré]: Dans un système CIN stéréo, l’angle formée par les axes optiques de chacun des deux systèmes d'acquisition des images (caméra et objectif).
 
 Stereo-Plane: In a stereo-DIC system, the plane formed by the optical axes of the two camera systems (i.e. camera and lens).
-=> 
+=> Plan stéréo : Dans un système CIN stéréo, le plan formé par les axes optiques des deux systèmes d'acquisition des images (caméra et objectif).
 
 Step Size, Lstep [pixel]: The spacing of pixel grid points at which the subset displacements are calculated. That is, there will be a displacement solution at every step in the ROI.
-=> 
+=> Taille du pas , Lstep [pixel] : Le nombre de points de la grille de pixels sur lesquels les décalages des imagettes sont calculés. Les calculs de déplacement se font à chacun de ces pas dans la Région d'Intérêt (RdI).
 
 Note 1: The step size is also sometimes reported as overlap. For example, 50% overlap means a step size of half the subset size.
-=> 
+=> Note 1 : La taille du pas est aussi définie comme un chevauchement. Par exemple, un chevauchement de 50% signifie une taille de pas égale à la moitié de la taille de l'imagette.
 
 Subset: Portion of the image that is used to calculate one 3D coordinate value, or one displacement value.
-=>
+=> Imagette : Partie de l'image qui est utilisée pour calculer les valeurs des coordonnées 3D ou une valeur de déplacement.
 
-Note 1: Center point displacement is commonly reported, although other parameters may be available via the subset shape function. Subset Size, Lsubset [pixel]: Length of the subset in the reference image.
-=> 
+Note 1: Center point displacement is commonly reported, although other parameters may be available via the subset shape function. 
+=> Note 1 : Le déplacement du point central de l'imagette est généralement signalé, bien que d'autres paramètres puissent être disponibles via la fonction de forme de l'imagette. Taille de l'imagette, Lsubset [pixel]: longueur du sous-ensemble dans l'image de référence.
+
+Subset Size, Lsubset [pixel]: Length of the subset in the reference image.
+=> Taille de l'imagette, Lsubset [pixel]: La longueur de l'imagette dans l'image de référence.
 
 Note 1: Subsets are typically square or circular (in the reference image), and thus a single length is sufficient to define the subset size. Some software, however, permits rectangular subsets; in this case, dimensions of both sides of the rectangle should be given to define the subset size.
+=> Note 1 : Les imagettes sont généralement carrées ou circulaires (dans l'image de référence), une seule longueur suffit pour définir cette taille de l'imagette. Certains logiciels permettent cependant des sous-ensembles rectangulaires, dans ce cas, les dimensions des deux côtés du rectangle doivent être indiquées pour définir la taille du sous-ensemble.
 
 Weighting Function: Mathematical device used to give some elements more influence on a result than other elements, based on the spatial location of the elements.
-=>
+=> Fonction de pondération : Fonction mathématique utilisé pour donner à certains éléments plus d'influence sur un résultat que d'autres éléments, en fonction de la localisation spatiale des éléments.
 
 Note 1: Common weighting functions are square or uniform (which weights all elements equally) or Gaussian (which weights elements closer to the center point of interest more heavily than elements farther from the center point of interest).
-=>
+=> Note 1 : Les fonctions de pondération communes sont les fonctions carrées ou uniformes (qui pondèrent tous les éléments de manière égale) ou les fonctions gaussiennes (qui pèsent plus lourdement les éléments proches du centre de l’intérêt que ceux situés plus loin du centre d’intérêt).
 
 Note 2: A subset weighting function is used to weight the intensities of the pixels contained within the subset when performing subset matching.
-=>
+=> Note 2 : Une fonction de pondération d'imagette est utilisée pour pondérer le poids des pixels contenus dans cette imagette lors de la mise en correspondance de ces imagettes.
 
 Note 3: A strain weighting function is used to weight the displacement data points within the strain window when computing strain.
-=>
+=> Note 3 : Une fonction de pondération de la déformation est utilisée pour pondérer les points de données de déplacement dans le champ de déformation lors du calcul de la déformation.
 
 Note 4: A filter weighting function is used to weight the data within a filter window when applying a spatial data filter.
-=> 
+=> Note 4 : Une fonction de pondération de filtre est utilisée pour pondérer les données dans une fenêtre de filtre lors de l'application d'un filtre de données spatiales.
 
 Window, Filter: Local region of the ROI of the image, containing a finite number of data points, that is used for local spatial filters of DIC data.
-=> 
+=> Fenêtre, Filtre : Région locale de la Région d'Intérêt (RdI), contenant un nombre fini de points de données, utilisée pour les filtres spatiaux locaux des données de CIN.
 
-Note 1: See Window Size for information about the filter window size. Window, Strain: Local region of the ROI of the image, containing a finite number of data points, that is used to calculate strain.
-=> 
+Note 1: See Window Size for information about the filter window size. 
+=> Note 1 : Voir la taille de la fenêtre pour plus d'informations sur la taille de la fenêtre du filtre. 
+
+Window, Strain: Local region of the ROI of the image, containing a finite number of data points, that is used to calculate strain.
+=> Fenêtre, déformation : région locale de la ROI de l'image, contenant un nombre fini de points de données, utilisée pour calculer la déformation.
 
 Note 1: Not all methods of computing strain invoke a strain window.
-=> 
+=> Note 1 : Toutes les méthodes de calcul de la contrainte n'invoquent pas une fenêtre de déformation.
 
 Note 2: See Window Size for information about the strain window size.
-=> 
+=> Note 2: Voir Taille de la fenêtre pour des informations sur la taille de la fenêtre de déformation.
 
 Window Size, Lwindow [data point]: Characteristic length of a local region of data points (e.g. a filter window or a strain window).
-=>
+=> Taille de la fenêtre, Lwindow [point de données] : La longueur caractéristique d'une région locale de points de données (par exemple une fenêtre de filtre ou une fenêtre de déformation).
 
 Note 1: Strain and filter windows are typically square, circular, or hexagonal, and the size of the window is given by the characteristic length of the window (i.e. one side of the square, the diameter of the circle, or the effective diameter of the hexagon). The window size is specified in terms of the number of data points that span the characteristic length of the window. Windows are typically symmetric and centered at a data point; thus, window sizes are typically odd integers.
-=>
+=> Note 1 : Les fenêtres de contrainte et de filtre sont généralement carrées, circulaires ou hexagonales. La taille de la fenêtre est donnée par la longueur caractéristique de la fenêtre (un côté du carré, le diamètre du cercle ou le diamètre effectif de l'hexagone). La taille de la fenêtre est spécifiée en termes de nombre de points de données couvrant la longueur caractéristique de la fenêtre. Les fenêtres sont généralement symétriques et centrées sur un point de données. Ainsi, les tailles de fenêtre sont généralement des entiers impairs.
 
 Note 2: The window size in terms of pixels, L∗(window), is given by Eqn. 7.1, where window is the L(window) size in terms of data points, and Lstep is the step size.
-
 L*(window) = (L(window) − 1) Lstep                                         (7.1)
-=> 
+=> Note 2 : La taille de la fenêtre en pixels, L∗(fenêtre), est donnée par Eqn. 7.1, où fenêtre est la taille de L (fenêtre) en termes de points de données et Lstep est la taille de pas.
+L*(fenêtre) = (L(fenêtre) − 1) x Lpas                                         (7.1)
 
 Note 3: To determine the window size in terms of physical units, the window size in terms of pixels must be divided by the average image scale.
-=> 
+=> Note 3: Pour déterminer la taille de la fenêtre en unités physiques, la taille de la fenêtre en pixels doit être divisée par la taille moyenne de l'image. ????
 
 Virtual Strain Gauge (VSG): The local region of the image that affects the strain value at a specific location.
-=> 
+=> Jauge de Déformation Virtuelle (JDV) : La région locale de l'image qui affecte la valeur de déformation à un emplacement spécifique.
 
 Note 1: The VSG is analogous to | but not exactly equal to | the physical area that a physical strain gauge would cover.
-=> 
+=> Note 1 : Le JDV est analogue à - mais pas exactement égal à - la zone physique qu'une jauge de déformation physique couvrirait.
 
-Virtual Strain Gauge Size, LV SG [pixel]: Characteristic length of the virtual strain gauge.
-=> 
+Virtual Strain Gauge Size, LVSG [pixel]: Characteristic length of the virtual strain gauge.
+=> Taille virtuelle de jauge de contrainte, LJDV [pixel]: longueur caractéristique de la jauge de déformation virtuelle.
 
 Note 1: Virtual strain gauges are typically square, circular, or hexagonal, and the size of the VSG is given by the characteristic length of the VSG (i.e. one side of the square, the diameter of the circle, or the effective diameter of the hexagon). The VSG size is specified in terms of the number of pixels that span the characteristic length of the VSG.
-=> 
+=> Note 1 : Les jauges de déformation virtuelles sont généralement carrées, circulaires ou hexagonales, et la taille de la VSG est donnée par la longueur caractéristique de la JDV (c’est-à-dire un côté du carré, le diamètre du cercle ou le diamètre effectif de l'hexagone). La taille de la JDV est spécifiée en termes de nombre de pixels couvrant la longueur caractéristique de la VSG.jauge de déformation virtuelle.
 
 Note 2: The size of the VSG depends on the strain calculation method and userdefined parameters such as step size, subset size, strain window, filter window, strain shape function, weighting functions, and subset shape function.
 An estimate for the size of the VSG, if L(window) > 0, is given by Eqn. 7.2, where L(window) is the window size (of either the strain window or of the filter window), L(step) is the step size, and Lsubset is the subset size.
-
 L(VSG) = (L(window) − 1) L(step) + L(subset)                                 (7.2)
-=> 
+
+=> Note 2: La taille de la JDV dépend de la méthode de calcul de la déformation et des paramètres définis par l'utilisateur tels que la taille du pas, la taille de l'imagette, la fenêtre de déformation, la fenêtre de filtrage, la fonction de forme de déformation, les fonctions de pondération et la fonction de forme de l'imagette.
+Une estimation de la taille du JDV, si L (fenêtre)> 0, est donnée par Eqn. 7.2, où L (fenêtre) est la taille de la fenêtre (de la fenêtre de déformation ou de la fenêtre de filtrage), L (step) est la taille du pas et Lsubset est la taille de l'imagette.
+L(VSG) = (L(window) − 1) L(step) + L(subset)                                 (7.2)
 
 Note 3: To determine the VSG size in terms of physical units, the VSG size must be divided by the average image scale.
-=> 
+=> Note 3: Pour déterminer la taille de la jauge de déformation virtuelle en termes d'unités physiques, vous devez la diviser par la taille moyenne de l'image.
 
 End ot text - Fin du texte.
 
