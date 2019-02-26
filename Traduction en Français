@@ -104,12 +104,11 @@ Note 1: The image scale varies with position in an image. In 2D-DIC, with a sing
 Interpolant: Interpolation function used to calculate the subpixel changes within the subset shape function transformation subject to the matching criteria during the correlation calculation.
 => Interpolant. Fonction d'interpolation utilisée pour calculer les modifications des imagettes dans la transformation de la fonction de forme des imagettes, en fonction des critères d'appariement lors du calcul de la corrélation.
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Matching Criterion: Mathematical formulation used to calculate the quality metric of the calculated displacement field based on the underlying image data. Also commonly referred to as "correlation criterion".
-=> Critère de correspondance. La formulation mathématique utilisée pour calculer un métrique de qualité du champ de déplacement déterminé en fonction de données d'images sous-jacentes. Aussi appelé communément "critère de corrélation"
+=> Critère de correspondance. La formulation mathématique utilisée pour calculer un métrique de qualité du champ de déplacement à partir des données issues des images sous-jacentes. Aussi appelé communément "critère de corrélation"
 
 Note 1: Common matching criteria include, but are not limited to, sum of square differences (SSD), normalized sum of square differences (NSSD), zero-normalized sum of square differences (ZNSSD) and cross-correlation (CC).
-=> Note 1 : Les critères/conditions d'appariement/de correspondance courants incluent, entre autres, la somme des carrés des différences (SSD), la somme normalisée des carrés des différences (NSSD), la somme normalisée à zéro des carrés des différences  (ZNSSD) et la corrélation croisée (CC). 
+=> Note 1 : Les critères de correspondance courants incluent, entre autres, la somme des carrés des différences (SSD), la somme normalisée des carrés des différences (NSSD), la somme normalisée à zéro des carrés des différences  (ZNSSD) et la corrélation croisée (CC). 
 
 Noise-Floor: [See Resolution of a Quantity-of-Interest.]
 => Bruit plancher [Voir Résolution d'une performance d'une grandeur recherchée]
@@ -121,7 +120,7 @@ Note 1: For DIC patterns that consist of primarily circular features (i.e. speck
 => Note 1 : Pour le mouchetis utilisé en CIN qui est principalement constitué de tâches de formes circulaires (Le mouchetis), la taille de la tâche est en fait appelée "taille du mouchetis".
 
 Note 2: If a range of feature sizes exist in the image, the mean size and an indication of the distribution of sizes (e.g. minimum and maximum, or standard deviation) should be reported.
-=> Note 2: s'il existe toute une gamme de tailles de ces tâches dans l'image, la taille moyenne et une indication de la distribution des tailles (par exemple, minimum et maximum, ou écart type) devront être précisées.
+=> Note 2 : Si il existe toute une gamme de tailles de ces tâches dans l'image, la taille moyenne et une indication de la distribution des tailles (par exemple, minimum et maximum, ou écart type) devront être précisées.
 
 Note 3: Physical size of the features can be calculated by dividing by the image scale.
 => Note 3 : La taille physique des tâches peut être calculée en la divisant par l'échelle de l'image.
@@ -130,7 +129,7 @@ Note 4: The spatial frequency of the pattern can be determined as the inverse of
 => Note 4 : La fréquence spatiale du motif peut être déterminée comme étant l'inverse de la taille de l'élément de motif (par exemple : 1 / (taille de l'élément de motif)).
 
 Pixel: Region over which the image data is averaged and quantized. There is a resulting gray level or number of counts at each pixel relative to some underlying input, usually optical intensity.
-=> Pixel: Région sur laquelle les données d'image sont moyennées et quantifiées. Il en résulte un niveau de gris ou une valeur pour chaque pixel par rapport à une entrée, généralement une intensité optique/lumineuse.
+=> Pixel: Région sur laquelle les données d'image sont moyennées et quantifiées. Il en résulte un niveau de gris ou une valeur pour chaque pixel par rapport à une entrée, généralement une intensité lumineuse.
 
 Quantity-of-Interest (QOI): An attribute or property of a test piece that may be distinguished qualitatively and determined quantitatively [8], which a person seeks to characterize by performing a particular test.
 => Quantité d'intérêt : Un attribut ou une propriété d'une éprouvette pouvant être distingué qualitativement et déterminée quantitativement [8], qu'une personne cherche à caractériser en effectuant un test particulier.
@@ -139,7 +138,7 @@ Note 1: QOIs may be both direct measurements or derived quantities. With respect
 => Note 1 : Les QI (Quantité d'Intérêt) peuvent être des mesures directes ou des quantités dérivées. En ce qui concerne le CIN, les Quantités d'intérêt courantes sont : la forme, la courbure, le déplacement, la vitesse, l’accélération, la déformation, le taux de déformation, etc.
 
 Quantization Level [bits]: Number of bits used to record the gray level at each pixel. This may be light intensity for optical images, X-ray density for computed tomography, or any other information encoded as image contrast (image data). (A height map in an atomic force microscope is an example of a different type of "image data".)
-=> Niveau de quantification [bits] : Nombre de bits utilisés pour enregistrer le niveau de gris de chaque pixel. Il peut être : l’intensité lumineuse des images, la densité des rayons X de la tomodensitométrie ou de toute autre information codée en tant que contraste d’image (données d’image). (Une carte de hauteur dans un microscope à force atomique est un exemple d'un type différent de "données d'image".)
+=> Niveau de quantification [bits] : Nombre de bits utilisés pour enregistrer le niveau de gris de chaque pixel. Cela peut être : l’intensité lumineuse des images, la densité des rayons X de la tomodensitométrie ou de toute autre information codée en tant que contraste d’image (données d’image). (Une carte de hauteur dans un microscope à force atomique est un exemple d'un type différent de "données d'image".)
 
 Region-of-Interest (ROI) of the Test Piece [mm × mm]: The portion of surface of the test piece that is used for analysis.
 => Région d'intérêt (RdI) de l'éprouvette [mm × mm] : La partie de la surface de l'éprouvette utilisée pour l'analyse.
@@ -163,10 +162,10 @@ Note 2: All QOIs are measured or derived using the image data that comes from th
 => Note 2 : Toutes les Quantités d'intérêt (QdI) sont mesurées ou calculées à l'aide des données d'image provenant de la Région d'Intérêt (RdI) de l'image.
 
 Note 3: The term "region-of-interest" can refer to either a portion of the test piece or the corresponding portion of an image, and context typically is sufficient to distinguish between the two demarcations.
-=> Note 3 : le terme "région d'intérêt" peut désigner une partie de l'éprouvette ou la partie correspondante d'une image, le contexte permettant généralement de distinguer les deux démarcations.
+=> Note 3 : Le terme "région d'intérêt" peut désigner une partie de l'éprouvette ou la partie correspondante d'une image, le contexte permettant généralement de distinguer les deux démarcations.
 
 Resolution, Image [pixel × pixel]: Total number of pixels contained in an image, typically reported as the width by height of the detector array in pixels.
-=> Résolution, Image [pixel × pixel] : Nombre total de pixels contenus dans une image, généralement calculé en multipliant la largeur par la hauteur de la matrice du capteur de la caméra en pixels.
+=> Résolution, Image [pixel × pixel] : Le nombre total de pixels contenus dans une image, généralement calculé en multipliant la largeur par la hauteur de la matrice du capteur de la caméra en pixels.
 
 Note 1: Image resolution should not be confused with optical resolution or spatial resolution.
 => Note 1 : La résolution de l'image ne doit pas être confondue avec la résolution optique ou la résolution spatiale.
@@ -184,13 +183,13 @@ Note 1: This definition might be counter intuitive, in that a smaller resolution
 => Note 1 : Cette définition peut être contre-intuitive, dans la mesure où une valeur de résolution plus petite est souhaitable, tandis qu'une valeur de résolution plus grande est généralement moins souhaitable. Ces tendances sont opposées à celles de la résolution d'image et de la résolution optique.
 
 Note 2: For the current edition of this guide, the concept of spatial resolution is defined as above; however, a unified method to determine the spatial resolution of DIC measurements is a current topic of interest for iDICs, and iDICs is actively exploring this concept in more detail.
-=> Note 2 : Pour l'édition actuelle de ce guide, le concept de résolution spatiale est défini comme ci-dessus. Cependant, une méthode unifiée permettant de déterminer la résolution spatiale des mesures DIC est un sujet d’actualité pour iDICs, et iDICs explorent activement ce concept plus en détail.
+=> Note 2 : Pour la présente édition de ce guide, le concept de résolution spatiale est défini comme ci-dessus. Cependant, une méthode unifiée permettant de déterminer la résolution spatiale des mesures CIN est un sujet d’actualité pour iDICs, et iDICs explorent activement ce concept plus en détail.
 
 Resolution Target: An object with features of specified width and/or spacing, used to determine the optical resolution of an imaging system.
-=> Mire d'étalonnage : Objet présentant des caractéristiques de largeur et, ou, d'espacement spécifiées, utilisé pour déterminer la résolution optique d'un système d'acquisition d'images.
+=> Mire d'étalonnage : OUn objet présentant des caractéristiques de largeur et, ou, d'espacement spécifiées, utilisé pour déterminer la résolution optique d'un système d'acquisition d'images.
 
 Note 1: Two common resolution targets are the 1951 USAF resolution target or the Siemens star, which can be purchased from major optics companies. See https://en.wikipedia.org/wiki/1951_USAF_resolution_test_chart and https://en.wikipedia.org/wiki/Siemens_star for more information.
-=> Note 1: Deux mires d'étalonnage de référence sont : (1) cible de résolution USAF de 1951 ou (2) l'étoile Siemens, qui peuvent être achetées auprès de grandes sociétés d'optique. Voir https://en.wikipedia.org/wiki/1951_USAF_resolution_test_chart et https://en.wikipedia.org/wiki/Siemens_star pour plus d'information.
+=> Note 1: Il existe deux mires de résolution de référence qui sont : (1) cible de résolution USAF de 1951 ou (2) l'étoile Siemens, qui peuvent être achetées auprès de grandes sociétés d'optique. Voir https://en.wikipedia.org/wiki/1951_USAF_resolution_test_chart et https://en.wikipedia.org/wiki/Siemens_star pour plus d'information.
 
 Resolution of a Quantity-of-Interest: The threshold value of a QOI below which measurements are indistinguishable from noise, and above which measurements are significant.
 => Résolution d'une quantité d'intérêt : La valeur de seuil d'une Quantité d'Intérêt (QdI) en dessous de laquelle les mesures sont impossibles à distinguer du bruit et au-dessus de laquelle les mesures sont significatives.
@@ -205,22 +204,25 @@ Note 3: The noise-floor reflects only the random variance error of the QOI, and 
 => Note 3 : Le bruit de fond reflète uniquement l'erreur de variance aléatoire du QdI, et ne reflète aucune erreur de polarisation systématique pouvant être présente dans le QdI. Voir Sec. 5.4 pour plus d'information sur les erreurs de variance par rapport aux erreurs de polarisation.
 
 Shape Function, Strain: Analytic equation that is fit, in a least-squares sense, to the displacement data within the strain window. Strains are computed from the derivatives of this equation.
-=> Fonction de forme, déformation (???) : Équation analytique qui est ajustée, au sens des moindres carrés, aux données de déplacement dans le champ de déformation. Les déformations sont calculées à partir des dérivées de cette équation.
+=> Fonction de forme, déformation : L'équation analytique qui est ajustée, au sens des moindres carrés, aux données de déplacement dans le champ de déformation. Les déformations sont calculées à partir des dérivées de cette équation.
 
 Note 1: The strain shape function should not be confused with the subset shape function.
-=> Note 1 : La fonction de forme de déformation ne doit pas être confondue avec la fonction de forme des imagettes.
+=> Note 1 : La fonction de déformation de forme ne doit pas être confondue avec la fonction de forme des imagettes.
 
-Note 2: Not all methods of computing strain invoke a strain shape function.Shape Function, Subset: Equation used to describe the displacement field within a subset.
-??? => Note 2 : Toutes les méthodes de calcul de la déformation n'invoquent pas une fonction de forme de déformation. Fonction de forme, sous-jeu: équation utilisée pour décrire le champ de déplacement dans un sous-ensemble.
+Note 2: Not all methods of computing strain invoke a strain shape function.
+=> Note 2 : Toutes les méthodes de calcul de la déformation n'invoquent pas une fonction de déformation de forme . 
+
+Shape Function, Subset: Equation used to describe the displacement field within a subset.
+=> Fonction de forme, imagette : L'équation utilisée pour décrire le champ de déplacement dans une imagette.
 
 Note 1: Affine (linear) is the most common subset shape function, but higher ordered implementations are also used.
-??? => Note 1 : Affine (linéaire) est la fonction de forme de sous-ensemble la plus courante, mais des implémentations plus ordonnées sont également utilisées.
+=> Note 1 : La fonction affine (linéaire) est la fonction de déformation de forme la plus courante, mais des implémentations avec plus d'ordonnées sont également utilisées.
 
-??? Note 2: The subset shape function should not be confused with the strain shape function.
-=>
+Note 2: The subset shape function should not be confused with the strain shape function.
+=> La fonction de forme d'imagette ne doit pas être confondue avec la fonction de déformation de forme.
 
 Stand-Off Distance [m]: The distance between the aperture of the lens and the test specimen.
-=> Distance de Travail [m] : Distance entre l'ouverture de l'objectif (???) et l'éprouvette.
+=> Distance de Travail [m] : Distance entre l'ouverture dans l'objectif et l'éprouvette.
 
 Stereo-Angle [degree]: In a stereo-DIC system, the included angle between the optical axis of each of the two camera systems (i.e. camera and lens).
 => Angle stéréo [degré]: Dans un système CIN stéréo, l’angle formée par les axes optiques de chacun des deux systèmes d'acquisition des images (caméra et objectif).
@@ -229,7 +231,7 @@ Stereo-Plane: In a stereo-DIC system, the plane formed by the optical axes of th
 => Plan stéréo : Dans un système CIN stéréo, le plan formé par les axes optiques des deux systèmes d'acquisition des images (caméra et objectif).
 
 Step Size, Lstep [pixel]: The spacing of pixel grid points at which the subset displacements are calculated. That is, there will be a displacement solution at every step in the ROI.
-=> Taille du pas , Lstep [pixel] : Le nombre de points de la grille de pixels sur lesquels les décalages des imagettes sont calculés. Les calculs de déplacement se font à chacun de ces pas dans la Région d'Intérêt (RdI).
+=> Taille du pas , Lstep [pixel] : Le nombre de points de la grille en pixels pour lesquel les décalages des imagettes sont calculés. Les calculs de déplacement se font à chacun de ces pas dans la Région d'Intérêt (RdI).
 
 Note 1: The step size is also sometimes reported as overlap. For example, 50% overlap means a step size of half the subset size.
 => Note 1 : La taille du pas est aussi définie comme un chevauchement. Par exemple, un chevauchement de 50% signifie une taille de pas égale à la moitié de la taille de l'imagette.
@@ -238,7 +240,7 @@ Subset: Portion of the image that is used to calculate one 3D coordinate value, 
 => Imagette : Partie de l'image qui est utilisée pour calculer les valeurs des coordonnées 3D ou une valeur de déplacement.
 
 Note 1: Center point displacement is commonly reported, although other parameters may be available via the subset shape function. 
-=> Note 1 : Le déplacement du point central de l'imagette est généralement signalé, bien que d'autres paramètres puissent être disponibles via la fonction de forme de l'imagette. Taille de l'imagette, Lsubset [pixel]: longueur du sous-ensemble dans l'image de référence.
+=> Note 1 : Le déplacement du point central de l'imagette est généralement signalé, bien que d'autres paramètres puissent être disponibles via la fonction de forme de l'imagette. Taille de l'imagette, Lsubset [pixel]: longueur de l'imagette dans l'image de référence.
 
 Subset Size, Lsubset [pixel]: Length of the subset in the reference image.
 => Taille de l'imagette, Lsubset [pixel]: La longueur de l'imagette dans l'image de référence.
@@ -247,7 +249,7 @@ Note 1: Subsets are typically square or circular (in the reference image), and t
 => Note 1 : Les imagettes sont généralement carrées ou circulaires (dans l'image de référence), une seule longueur suffit pour définir cette taille de l'imagette. Certains logiciels permettent cependant des sous-ensembles rectangulaires, dans ce cas, les dimensions des deux côtés du rectangle doivent être indiquées pour définir la taille du sous-ensemble.
 
 Weighting Function: Mathematical device used to give some elements more influence on a result than other elements, based on the spatial location of the elements.
-=> Fonction de pondération : Fonction mathématique utilisé pour donner à certains éléments plus d'influence sur un résultat que d'autres éléments, en fonction de la localisation spatiale des éléments.
+=> Fonction de pondération : Une fonction mathématique utilisée pour donner à certains éléments plus d'influence sur un résultat que d'autres éléments, basé sur la localisation spatiale de ces éléments.
 
 Note 1: Common weighting functions are square or uniform (which weights all elements equally) or Gaussian (which weights elements closer to the center point of interest more heavily than elements farther from the center point of interest).
 => Note 1 : Les fonctions de pondération communes sont les fonctions carrées ou uniformes (qui pondèrent tous les éléments de manière égale) ou les fonctions gaussiennes (qui pèsent plus lourdement les éléments proches du centre de l’intérêt que ceux situés plus loin du centre d’intérêt).
@@ -262,19 +264,19 @@ Note 4: A filter weighting function is used to weight the data within a filter w
 => Note 4 : Une fonction de pondération de filtre est utilisée pour pondérer les données dans une fenêtre de filtre lors de l'application d'un filtre de données spatiales.
 
 Window, Filter: Local region of the ROI of the image, containing a finite number of data points, that is used for local spatial filters of DIC data.
-=> Fenêtre, Filtre : Région locale de la Région d'Intérêt (RdI), contenant un nombre fini de points de données, utilisée pour les filtres spatiaux locaux des données de CIN.
+=> Fenêtre, Filtre : Une région locale de la Région d'Intérêt (RdI), contenant un nombre fini de points de données, utilisée pour les filtres spatiaux locaux des données de CIN.
 
 Note 1: See Window Size for information about the filter window size. 
 => Note 1 : Voir la taille de la fenêtre pour plus d'informations sur la taille de la fenêtre du filtre. 
 
 Window, Strain: Local region of the ROI of the image, containing a finite number of data points, that is used to calculate strain.
-=> Fenêtre, déformation : région locale de la ROI de l'image, contenant un nombre fini de points de données, utilisée pour calculer la déformation.
+=> Fenêtre, déformation : Une région locale de la ROI de l'image, contenant un nombre fini de points de données, utilisée pour calculer la déformation.
 
 Note 1: Not all methods of computing strain invoke a strain window.
 => Note 1 : Toutes les méthodes de calcul de la contrainte n'invoquent pas une fenêtre de déformation.
 
 Note 2: See Window Size for information about the strain window size.
-=> Note 2: Voir Taille de la fenêtre pour des informations sur la taille de la fenêtre de déformation.
+=> Note 2 : Voir Taille de la fenêtre pour des informations sur la taille de la fenêtre de déformation.
 
 Window Size, Lwindow [data point]: Characteristic length of a local region of data points (e.g. a filter window or a strain window).
 => Taille de la fenêtre, Lwindow [point de données] : La longueur caractéristique d'une région locale de points de données (par exemple une fenêtre de filtre ou une fenêtre de déformation).
@@ -288,19 +290,19 @@ L*(window) = (L(window) − 1) Lstep                                         (7.
 L*(fenêtre) = (L(fenêtre) − 1) x Lpas                                         (7.1)
 
 Note 3: To determine the window size in terms of physical units, the window size in terms of pixels must be divided by the average image scale.
-=> Note 3: Pour déterminer la taille de la fenêtre en unités physiques, la taille de la fenêtre en pixels doit être divisée par la taille moyenne de l'image. ????
+=> Note 3 : Pour déterminer la taille de la fenêtre en unités physiques, la taille de la fenêtre en pixels doit être divisée par la taille moyenne de l'échelle de l'image. 
 
 Virtual Strain Gauge (VSG): The local region of the image that affects the strain value at a specific location.
 => Jauge de Déformation Virtuelle (JDV) : La région locale de l'image qui affecte la valeur de déformation à un emplacement spécifique.
 
 Note 1: The VSG is analogous to | but not exactly equal to | the physical area that a physical strain gauge would cover.
-=> Note 1 : Le JDV est analogue à - mais pas exactement égal à - la zone physique qu'une jauge de déformation physique couvrirait.
+=> Note 1 : La JDV est analogue à - mais pas exactement égal à - la zone physique qu'une jauge de déformation physique couvrirait.
 
 Virtual Strain Gauge Size, LVSG [pixel]: Characteristic length of the virtual strain gauge.
-=> Taille virtuelle de jauge de contrainte, LJDV [pixel]: longueur caractéristique de la jauge de déformation virtuelle.
+=> Taille virtuelle de jauge de contrainte, LJDV [pixel] : La longueur caractéristique de la jauge de déformation virtuelle.
 
 Note 1: Virtual strain gauges are typically square, circular, or hexagonal, and the size of the VSG is given by the characteristic length of the VSG (i.e. one side of the square, the diameter of the circle, or the effective diameter of the hexagon). The VSG size is specified in terms of the number of pixels that span the characteristic length of the VSG.
-=> Note 1 : Les jauges de déformation virtuelles sont généralement carrées, circulaires ou hexagonales, et la taille de la VSG est donnée par la longueur caractéristique de la JDV (c’est-à-dire un côté du carré, le diamètre du cercle ou le diamètre effectif de l'hexagone). La taille de la JDV est spécifiée en termes de nombre de pixels couvrant la longueur caractéristique de la VSG.jauge de déformation virtuelle.
+=> Note 1 : Les jauges de déformation virtuelles sont généralement carrées, circulaires ou hexagonales, et la taille de la JDV est donnée par la longueur caractéristique de la JDV (c’est-à-dire un côté du carré, le diamètre du cercle ou le diamètre effectif de l'hexagone). La taille de la JDV est spécifiée en termes de nombre de pixels couvrant la longueur caractéristique de la JDV.
 
 Note 2: The size of the VSG depends on the strain calculation method and userdefined parameters such as step size, subset size, strain window, filter window, strain shape function, weighting functions, and subset shape function.
 An estimate for the size of the VSG, if L(window) > 0, is given by Eqn. 7.2, where L(window) is the window size (of either the strain window or of the filter window), L(step) is the step size, and Lsubset is the subset size.
@@ -311,7 +313,7 @@ Une estimation de la taille du JDV, si L (fenêtre)> 0, est donnée par Eqn. 7.2
 L(VSG) = (L(window) − 1) L(step) + L(subset)                                 (7.2)
 
 Note 3: To determine the VSG size in terms of physical units, the VSG size must be divided by the average image scale.
-=> Note 3: Pour déterminer la taille de la jauge de déformation virtuelle en termes d'unités physiques, vous devez la diviser par la taille moyenne de l'image.
+=> Note 3: Pour déterminer la taille de la jauge de déformation virtuelle en termes d'unités physiques, vous devez la diviser par l'échelle moyenne de l'image.
 
 End ot text - Fin du texte.
 
