@@ -1,17 +1,47 @@
-# iDICs-Guide-Glossary-and-Acronyms-7
-Proposition de traduction en français du chapitre 7 du Guide de bonnes pratiques de iDICs
+# Fr. Proposition de traduction en français du chapitre 7 "Glossary and acronyms" du "Guide de bonnes pratiques en matière de corrélation d'images" de iDICs (http://idics.org)
+En. French Translation Proposal for Chapter 7 "Glossary and acronyms" of the iDICs Guide: "A Good Practices Guide for Digital Image Correlation", (http://idics.org/guide/)
 
-# En - Here it is a proposition of iDICs guide chapter 7 collective translation in French
-The aim is to translate the original text and to keep the initail meaning of this chapter, not to rewrite it.
+<i><b>February 26, 2019. This present version is not endorsed by the iDICs.</i></b>
 
-# Fr - Ici, il est proposé une traduction collective du chapitre 7 du guide bonnes pratique de l'iDICs (http://idics.org/guide/)
-L'objectifs est de traduire le texte original et de garder le sens initial du document, pas de le réécrire.
+## Fr. Il est proposé ici une traduction collective du chapitre 7 "Glossary and acronyms" du guide bonnes pratique en matière de corrélation d'images de l'iDICs
+L'objectif n'est de traduire l'ensemble du guide ce qui serait certainement un long travail mais de traduire uniquement le chaptire 7 "Glossary and acronyms" afin de :
+1. Permettre aux nouveaux utilisateurs de mieux appréhender et plus rapidement les termes techniques clés, 
+2. De partager avec une communauté de même language une, oou plusieurs, interprétations et traductions de ces termes clés.
 
-# En - Beside the fact it could be interesting to translate in French all the document, I think that will be a huge work that it will be to maintain throughout the upcoming versions.
-Therefore, we suppose that French readers have the level to understand globally the main text, but, expecially for newcomers in DIC, they certainement need a very good comprehension to key abbreviations, acronyms and terms in their mother tongue. These keys expression has been explained in the chapter 7 of this guide. So the translation of this chapter 7 should be enough for a full comprehension of the entire guide for French readers. 
+La traduction a été faite manuellement, parfois avec l'aide de dictionnaires et d'études, selon ma connaissance et expérience de la corrélation d'images (chez Kilonewton, représentant CSI en France) afin de traduire au mieux les termes et expressions dans le contexte professionnel de la corrélation.
 
-# Fr - Bien qu'il pourrait être intéressant de traduire l'ensemble du guide, je pense que cela serait un énorme travail qu'il sera dificile de maintenir à travers les diverses mises à jours à venir. 
-Par ailleurs, nous supposons que les lecteurs français disposent du niveau de compréhension global pour le texte principal, mais, particulièrement pour les nouveaux utilisateurs de la corrélation d'images numériques, ils ont certainement besoin d'une bonne compréhension des abbréviations, acronymes et terms dans leur langue maternelle. Ces expressions clés ont été expliqués dans le chapitre 7 de ce guide. Alors, la traduction du chapitre 7 devrait être suffisante pour l'entière compréhension de ce guide pour les lecteurs français. 
+## Suite à donner et objectifs.
+La présente version est transmise à :
+- iDICs, le groupe de travail iDICs qui a élaboré ce guide,
+- à des experts de langue française de ma connaissance travaillant sur la corrélation d'images.
 
-José
---------- Troyes, 12/08/2018 - Troyes, le 8 décembre 2018  ---------------
+L'objectifs est :
+- L'appropriation par iDICs de cette traduction et son évolution,
+- l'amélioration de cette traduction au regard de l'expertise de chacun et de la diversité des langues françaises.
+
+Cordialement,
+
+##José Relland <br/>
+jose.relland@gmail.com <br/>
+France <br/>
+
+
+## En. Here is a collective translation proposal of the chapter 7 "Glossary and acronyms" of the good practice guide for image correlation of the iDICs
+The goal is not to translate the entire guide which would certainly be a long work but to translate only the 7 "Glossary and acronyms" chaptire in order to:
+1. Allow new users to better understand key technical terms more quickly
+2. To share with one like-language community one, or several, different interpretations and translations of these key terms.
+
+The translation was done manually, sometimes with the help of dictionaries and studies, according to my knowledge and experience in the field of digital image correlation (with Kilonewton, CSI representative in France) in order to get the best translatation of terms and expressions in the digital image correlation context.
+
+## Next and objectives.
+This version is sent to:
+- iDICs, the iDICs working group that developed this guide,
+- some French-speaking experts of my network working on digital image correlation.
+
+The objectives are:
+- The appropriation by iDICs of this translation and its evolution,
+- the improvement of this translation with regard to the expertise of each and the diversity of French languages.
+
+Thank you for your time and consideration.
+
+Regards,
