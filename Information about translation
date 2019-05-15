@@ -1,0 +1,118 @@
+En. This French language edition is a translation of the original work in English by the International
+Digital Image Correlation Society entitled A Good Practices Guide for Digital Image Correlation, with
+DOI 10.32720/idics/gpg.ed1. 
+If any text of the original edition in English is inconsistent with the text of this translation, the original edition in English
+shall prevail.
+
+Fr. Cette édition en langue française est une traduction d'un travail original en anglais réalisé par la société dénommée International
+Digital Image Correlation Society et qui a pour titre : "A Good Guide de pratiques pour la corrélation d'images numériques", 
+DOI 10.32720/idics/gpg.ed1. 
+Dans le cas où un texte de l'édition originale en anglais n'est pas conforme au texte de la présente traduction, 
+c'est le texte de l'édition originale en anglais qui prévalera.
+
+En. Copyright ©2018 by International Digital Image Correlation Society (iDICs)
+
+Fr. Copyright ©2018 par International Digital Image Correlation Society (iDICs)
+
+
+En. Some rights reserved. This publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic or mechanical methods, but
+only without alteration and with full attribution to the International Digital Image Correlation Society (iDICs). 
+Exception is given in the case of brief quotations embodied in other documents 
+with full attribution to the International Digital Image Correlation Society, 
+but not in a way that suggests endorsement of the other document by the International Digital Image Correlation Society. 
+For permission requests, contact the International Digital Image Correlation Society at info@idics.org.
+
+Fr. Certains droits réservés. Cette publication peut être reproduite, distribuée ou transmise sous quelque forme que ce soit 
+ou par quelque moyen que ce soit, y compris la photocopie, l'enregistrement ou d'autres méthodes électroniques ou mécaniques, 
+mais uniquement sans modification et en attribuant l'entière responsabilité à la Société International Digital Image Correlation Society (iDICs). 
+Une exception est faite dans le cas de citations brèves figurant dans d'autres documents 
+avec une pleine attribution à International Digital Image Correlation Society, 
+mais pas d'une manière qui suggère l'approbation de l'autre document par l'International Digital Image Correlation Society. 
+Pour les demandes d'autorisation, contactez International Digital Image Correlation Society à info@idics.org.
+
+
+En. DOI: 10.32720/idics/gpg.ed1.
+
+Fr. DOI: 10.32720/idics/gpg.ed1.XX
+
+
+EN. Electronic copies of this guide are available at www.idics.org.
+
+Fr. Une copie électronique de ce guide est disponibles à www.idics.org.
+
+
+En. Suggested citation for publications in French: International Digital Image Correlation Society, Jones,
+E.M.C. and Iadicola, M.A. (Eds.) (2018). Translated Title. [A Good Practices Guide for Digital
+Image Correlation]. (J. Relland, J.-N. P´eri´e, J.-J.
+Orteu, L. Pilot-Cousin, R. Ulrich, Trans.) https://doi.org/10.32720/idics/gpg.ed1.XX.
+
+Fr. Contribution pour la publication en français : International Digital Image Correlation Society, Jones,
+E.M.C. and Iadicola, M.A. (Eds.) (2018). Titre en français : Guide des Bonnes Pratiques de la Corrélation d'Images Numériques. 
+Auteurs et relecteurs : J. Relland, xx, xx 
+https://doi.org/10.32720/idics/gpg.ed1.XX.
+
+En. About this Guide
+The International Digital Image Correlation Society (iDICs) was founded in 2015 as a nonprofit scientific
+and educational organization committed to training and educating users of digital image correlation (DIC) systems. 
+iDICs is composed of members from academia, government, and industry, and develops
+world-recognized DIC training and certifications to improve industry practice of DIC for general applications, 
+with emphasis on both research and establishing standards for DIC measurement techniques.
+More information can be found at www.idics.org.
+
+Fr. A propos de ce guide
+La Société dénommée International Digital Image Correlation Society (iDICs) a été fondée en 2015 
+en tant qu'association scientifique à but non lucratif et organisation éducative engagée dans la formation et l'éducation 
+des utilisateurs de la Corrélation d'Images Numériques (CIN). iDICs est composé de membres provenant de milieux universitaires, 
+du gouvernement et de l'industrie, et développe des formations et des certifications sur la CIN mondialement reconnues pour
+améliorer la pratique de la CIN dans l'industrie pour des applications générales, en mettant l'accent à la fois 
+sur la recherche et sur l'établissement de normes sur les techniques de mesure par la CIN.
+Pour plus d'informations, veuillez consulter le site www.idics.org.
+
+En. To support this mission, the iDICs Standardization, Good Practices, and Uncertainty Quantification Committee was formed 
+in part to develop guidelines for DIC practitioners. Details of the entire development and review process can be obtained
+through iDICs (info@idics.org), but they are summarized here. The working group on Good Practices, 
+Reporting Requirements and Terminology (a subset of the committee) developed this Good Practices Guide for DIC. 
+The working group was composed of expert DIC practitioners (see below), including representatives from many commercial DIC
+software packages, with diverse experience using DIC in a myriad of applications.
+
+Fr. Pour appuyer cette mission, le comité Normalisation, Bonnes Pratiques et Quantification des Incertitudes 
+a été formé, en partie, pour élaborer des lignes directrices à l'intention des praticiens de la CIN. 
+Les détails de l'ensemble du processus de développement et de revue peuvent être obtenus auprès de iDICs (info@idics.org). 
+Toutefois, ces détails sont résumés ici. Le groupe de travail sur les Bonnes Pratiques, 
+les Exigences en matière de Rapports et sur la Terminologie (un sous-groupe du comité) a élaboré le présent 
+Guide de bonnes pratiques de la CIN. Le groupe de travail était composé d'experts de la CIN (voir ci-dessous), 
+incluant des représentants de nombreuses applications commerciales de la CIN, avec diverses expériences 
+dans la CIN sur une myriade d'applications.
+
+En. After a final draft of the guide was completed by the working group, a public comment period was
+opened in November 2017 through January 2018, during which any DIC practitioner could opt-in to
+review the Guide. In total, 100 people opted-in to the review process, 56 of whom returned official
+votes. Of the 56 received votes, 23 people voted “Approve without comment”, 
+32 people voted “Approve with comments and suggested revisions”, and
+1 person voted “Disapprove with comments (at least one technical) and suggested revisions”. Over 500
+comments were received (over 130 of which were technical comments), and the working group addressed each, 
+either through revising the Guide, or through a written rebuttal. After that revision, the
+final version of the Guide and the working group responses to the comments were reviewed and approved 
+by some of the members of the iDICs Executive Board, who did not participate in either the working group or the public comment period.
+
+Fr. Après la rédaction d'une version finale du guide par le groupe de travail, 
+une période de commentaires par le public a été ouverte de novembre 2017 à janvier 2018,
+au cours de laquelle tout praticien de la CIN eut la possibilité de participer à l'examen de ce draft. 
+Au total, 100 personnes ont choisi de participer à ce processus de revue, 56 d'entre eux ont renvoyé des votes officiels. 
+Sur les 56 votes reçus, 23 personnes ont voté " Approuver sans commentaire ", 
+32 personnes ont voté " Approuver avec commentaires et suggestions de révisions ", et
+1 personne a voté "Désapprouver avec commentaires (au moins un sur le plan technique) et suggéra des révisions ". 
+Plus de 500 commentaires ont été reçus (plus de 130 d'entre eux été des commentaires sur le plan technique),
+et le groupe de travail a travaillé sur chacun d'entre eux, soit en révisant le Guide, soit en apportant une réfutation écrite. 
+Après cette période de révision, la version finale du Guide et les réponses aux commentaires du groupe de travail
+ont été examinées et approuvées par des membres du Conseil exécutif de l'iDICs qui n'ont ni participé au groupe de travail 
+ni participé à la période de commentaires du public.
+
+En. This French edition of the Guide provides a translation of Chapter 7 — Glossary and Acronyms.
+For the remainder of the Guide, please refer to the English edition.
+
+Fr. La présente édition française du Guide fournit une traduction du chapitre 7 - Glossaire et acronymes.
+Pour le reste du Guide, veuillez consulter l'édition anglaise.
+
+
