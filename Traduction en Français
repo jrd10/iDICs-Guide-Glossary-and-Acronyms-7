@@ -30,7 +30,7 @@ SOD: Stand-Off Distance
 => DdT : Distance de travail
 
 VSG: Virtual Strain Gauge
-=> Jauge de contrainte virtuelle.
+=> Jauge de déformation virtuelle.
 
 7.2 Glossary
 => Glossaire
@@ -45,7 +45,7 @@ Note 1: 2D-DIC refers to the measurement of displacements in only two directions
 => Note 1 : CIN-2D fait référence à une mesure de déplacement seulement dans deux directions d'une surface d'une pièce de test, où une caméra est orientée perpendiculairement au plan de la pièce à tester.
 
 Note 2: Stereo-DIC refers to the measurement of shape and displacements in three directions on the surface of the test piece, by using two (or more) cameras oriented at different angles. Stereo-DIC is sometimes called 3D-DIC, but should not be confused with volumetric-DIC, which provides shape and displacement measurements throughout the volume of the test piece.
-=> Note 2 : Stéréo-CIN faire référence à la mesure de forme et de déplacements, dans les 3 dimensions, de la surface d'une pièce de test, où deux (ou plus) caméras sont orientées à des angles différents. CIN-Stéréo est parfois appeléé CIN-3D mais ne doit pas être confondues avec la CIN volumétrique qui fournit des mesures de forme et déplacements dans le volume de la pièce de test.
+=> Note 2 : Stéréo CIN faire référence à la mesure de forme et de déplacements, dans les 3 dimensions, de la surface d'une pièce de test, où deux (ou plus) caméras sont orientées à des angles différents. La stéréo CIN est parfois appeléé CIN-3D mais ne doit pas être confondues avec la CIN volumétrique qui fournit des mesures de forme et déplacements dans le volume de la pièce de test.
 
 Data Filtering: Any further post-processing of the results to spatially or temporally filter the DIC results (could include a Gaussian filter, median filter, etc.) 
 => Filtrage de données : Tout résultat de CIN obtenu par post-traitement et filtré spatialement ou temporellement (Peut inclure des filtres gaussian, filtre median, etc.)
@@ -53,7 +53,7 @@ Data Filtering: Any further post-processing of the results to spatially or tempo
 Data Point: A point at which DIC results (displacements, strains, etc.) are reported.
 Data points are typically reported at the center of subsets in local DIC.
 => Point de données : Un point sur lequel tous les résultats de la corrélation d'images (déplacements, déformations, etc.) sont reportés.
-Ces points de données sont typiquement reportés au centre de l'image dans CIN, méthode locale.
+Ces points de données sont typiquement reportés au centre de l'imagette dans CIN, méthode locale.
 
 Dynamic Range, Detector [counts or gray levels]: Number of bits of the analog to digital converter of a camera detector (e.g. 8-bit).
 => Etendue dynamique, Capteur [nombre ou niveau de gris ] : Nombre de bits du convertisseur analogique - numérique du capteur de la caméra (par exemple 8 bits)
@@ -62,13 +62,13 @@ Dynamic Range, Image [counts or gray levels]: Range of gray levels contained in 
 => Etendue dynamique, image numérique [nombre ou niveau de gris ] : Etendue dynamique des niveaux de gris contenus dans l'image numérique. Celle-ci peut être visualisée graphiquement par un histogram. L'étendue dynamique des niveaux de gris de l'image numérique est inférieure ou égale à l'étendue dynamique du capteur de la caméra.
 
 Epipolar Error [pixel]: The distance between the location of a data point, as determined by cross-correlation of a pair of images from the two cameras of a stereo-DIC system, and the epipolar line.
-=> L'erreur épipolaire [pixel] : La distance entre la location d'un point de donnée, comme déterminé par la cross-corrélation d'une pair d'image de deux caméras d'un système CIN-stéréo, et la ligne épipolaire.
+=> L'erreur épipolaire [pixel] : La distance entre la localisation d'un point de donnée, comme déterminé par la cross-corrélation d'une pair d'image de deux caméras d'un système de stéréo CIN, et la ligne épipolaire.
 
 Note 1: Depending on the DIC software, the epipolar error may also be called projection error, three-dimensional residuum, intersection error, or correlation deviation.
-=> Selon the logiciel de CIN, l'erreur épipolaire peut être aussi appelée : projection error, three-dimensional residuum, intersection erro, ou déviation de corrélation.
+=> Selon the logiciel de CIN, l'erreur épipolaire peut être aussi appelée : l'erreur de projection, le residuum tri-dimensionnel, l'erreur d'intersection, ou la déviation de corrélation.
 
 Note 2: The epipolar line is determined by the extrinsic parameters of the stereocamera calibration (i.e. stereo-angle, distance between two cameras). For more information on epipolar geometry, refer to [42, Sec. 4.2 (Three-Dimensional Computer Vision)].
-=> La ligne epipolaire est déterminée par les paramètres extrinsèques de la calibration du système stéréo formé par les deux caméras (par exemple : l'angle de stéréocorrélation, la distance entre les deux caméras). Pour plus d'information sur la géométrie épipolaire, se référer à [42, Sec. 4.2 (Three-Dimensional Computer Vision)].
+=> La ligne epipolaire est déterminée par les paramètres extrinsèques de la calibration du système stéréo formé par les deux caméras (par exemple : l'angle de stéréo corrélation, la distance entre les deux caméras). Pour plus d'information sur la géométrie épipolaire, se référer à [42, Sec. 4.2 (Three-Dimensional Computer Vision)].
 
 Field-of-View (FOV) [mm × mm]: The region of space projected through a lens system onto a camera detector.
 => Champ de vision (CdV) [mm x mm] : La région de l'espace projeté à travers le système de lentilles sur le capteur de la caméra.
@@ -93,7 +93,7 @@ Note 1: Analog Image Filtering refers to filtering that is done in an analog fas
 => Note 1 : Le filtrage des images analogiques fait référence à un filtrage qui est fait de manière analogique en modifiant le système optique physique (par exemple un filtre de floutage monté sur un capteur de caméra ou par le dérèglage de la mise au point des lentilles.
 
 Note 2: Digital Image Filtering refers to filtering that is done in a digital fashion as a post-processing step after the image has been acquired, e.g. a Gaussian filter.
-=> Note 2 : Le filtrage d'images numériques fait référence à un filtrage qui est de manière numérique, dans une étape de post-traitement après que l'image a été acquise, par exempl un filtre gaussien. 
+=> Note 2 : Le filtrage des images numériques fait référence à un filtrage qui est de manière numérique, dans une étape de post-traitement après que l'image a été acquise, par exempl un filtre gaussien. 
 
 Image Noise [counts or gray levels or percent of dynamic range]: Pixel-wise acquisition noise of the imaging system. This often varies depending on pixel intensity, camera temperature and optical intensity.
 => Bruit dans l'image [Un nombre ou un niveau de gris ou une valeur dynamique en pourcentage] Bruit emmené pour chaque pixel du système d'acquisition des images. Cela peut varier selon l'intensité du pixel, la température de la caméra et l'intensity lumineuse. 
@@ -102,7 +102,7 @@ Image Scale [pixel/mm]: Number of optical elements (pixels) used to record an im
 => Echelle de l'image [pixel/mm] Nombre d'éléments optiques (pixels) utilisé pour enregistrer une image d'une logueur physique d'une région. L'échelle de l'image peut être utilisée pour convertir la taille du pixel d'une image en unités physiques (Exemple : le mètre)
 
 Note 1: The image scale varies with position in an image. In 2D-DIC, with a single camera perpendicular to the test piece, the variation tends to be small, since the variation is the result of lens distortions. In stereo-DIC, where the cameras are angled with respect to the surface of interest, the variation in image scale is much larger. This is the result of a combination of the lens distortions and the perspective effect (which is reversed in the left and right images). For stereo-DIC systems, the average image scale of the ROI shall be reported.
-=> Note 1. L'échelle de l'image varie avec la position dans l'image. En CIN-2D, avec une caméra perpendicualire à la pièce à tester, la variation tend à être faible, la variation étant le résultat de la distortion de la lentille. In CIN-stéréo, où les caméras ont un angle avec l'aire d'intérêt, la variation de l'échelle dans l'image est plus importante. Cela est le résultat d'une combinaison de la distortion de l'objectif et d'un effet de perspective (dont les côtés droit et gauche de l'image sont inversés). Pour les systèmes CIN-Stéréo, l'échelle moyenne de l'image devra être reporté.
+=> Note 1. L'échelle de l'image varie avec la position dans l'image. En CIN-2D, avec une caméra perpendicualire à la pièce à tester, la variation tend à être faible, la variation étant le résultat de la distortion de la lentille. Dans la stéréo CIN, où les caméras ont un angle avec l'aire d'intérêt, la variation de l'échelle dans l'image est plus importante. Cela est le résultat d'une combinaison de la distortion de l'objectif et d'un effet de perspective (dont les côtés droit et gauche de l'image sont inversés). Pour les systèmes stéréo CIN, l'échelle moyenne de l'image devra être reporté.
 
 Interpolant: Interpolation function used to calculate the subpixel changes within the subset shape function transformation subject to the matching criteria during the correlation calculation.
 => Interpolant. Fonction d'interpolation utilisée pour calculer les modifications des imagettes dans la transformation de la fonction de forme des imagettes, en fonction des critères d'appariement lors du calcul de la corrélation.
@@ -114,7 +114,7 @@ Note 1: Common matching criteria include, but are not limited to, sum of square 
 => Note 1 : Les critères de correspondance courants incluent, entre autres, la somme des carrés des différences (SSD), la somme normalisée des carrés des différences (NSSD), la somme normalisée à zéro des carrés des différences  (ZNSSD) et la corrélation croisée (CC). 
 
 Noise-Floor: [See Resolution of a Quantity-of-Interest.]
-=> Bruit plancher [Voir Résolution d'une performance d'une grandeur recherchée]
+=> Bruit plancher [Voir Résolution d'une performance d'une Grandeur d'intérêt]
 
 Pattern Feature Size [pixel]: Characteristic length (e.g. diameter) of DIC pattern features in the image data, reported in terms of pixels.
 => Taille caractéristique d'un mouchetis [pixel] : Longueur caractéristique (par exemple : le diamètre) des caractéristiques d'un mouchetis pour la CIN d'une image de données, exprimée en pixels
@@ -135,7 +135,7 @@ Pixel: Region over which the image data is averaged and quantized. There is a re
 => Pixel: Région sur laquelle les données d'image sont moyennées et quantifiées. Il en résulte un niveau de gris ou une valeur pour chaque pixel par rapport à une entrée, généralement une intensité lumineuse.
 
 Quantity-of-Interest (QOI): An attribute or property of a test piece that may be distinguished qualitatively and determined quantitatively [8], which a person seeks to characterize by performing a particular test.
-=> Quantité d'intérêt : Un attribut ou une propriété d'une éprouvette pouvant être distingué qualitativement et déterminée quantitativement [8], qu'une personne cherche à caractériser en effectuant un test particulier.
+=> Grandeur d'intérêt : Un attribut ou une propriété d'une éprouvette pouvant être distingué qualitativement et déterminée quantitativement [8], qu'une personne cherche à caractériser en effectuant un test particulier.
 
 Note 1: QOIs may be both direct measurements or derived quantities. With respect to DIC, common QOIs are shape, curvature, displacement, velocity, acceleration, strain, strain-rate, etc.
 => Note 1 : Les QI (Quantité d'Intérêt) peuvent être des mesures directes ou des quantités dérivées. En ce qui concerne le CIN, les Quantités d'intérêt courantes sont : la forme, la courbure, le déplacement, la vitesse, l’accélération, la déformation, le taux de déformation, etc.
@@ -189,7 +189,7 @@ Note 2: For the current edition of this guide, the concept of spatial resolution
 => Note 2 : Pour la présente édition de ce guide, le concept de résolution spatiale est défini comme ci-dessus. Cependant, une méthode unifiée permettant de déterminer la résolution spatiale des mesures CIN est un sujet d’actualité pour iDICs, et iDICs explorent activement ce concept plus en détail.
 
 Resolution Target: An object with features of specified width and/or spacing, used to determine the optical resolution of an imaging system.
-=> Mire d'étalonnage : OUn objet présentant des caractéristiques de largeur et, ou, d'espacement spécifiées, utilisé pour déterminer la résolution optique d'un système d'acquisition d'images.
+=> Mire d'étalonnage : Un objet présentant des caractéristiques de largeur et, ou, d'espacement spécifiées, utilisé pour déterminer la résolution optique d'un système d'acquisition d'images.
 
 Note 1: Two common resolution targets are the 1951 USAF resolution target or the Siemens star, which can be purchased from major optics companies. See https://en.wikipedia.org/wiki/1951_USAF_resolution_test_chart and https://en.wikipedia.org/wiki/Siemens_star for more information.
 => Note 1: Il existe deux mires de résolution de référence qui sont : (1) cible de résolution USAF de 1951 ou (2) l'étoile Siemens, qui peuvent être achetées auprès de grandes sociétés d'optique. Voir https://en.wikipedia.org/wiki/1951_USAF_resolution_test_chart et https://en.wikipedia.org/wiki/Siemens_star pour plus d'information.
